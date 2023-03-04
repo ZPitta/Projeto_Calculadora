@@ -1,0 +1,15 @@
+body {
+    background-color: #330099;
+}
+
+.textResult {
+    color: green;
+}
+
+.result {
+    background-color: black;
+    width: 300px;
+    height: 65px;
+    text-align: center;
+
+}
