@@ -13,47 +13,49 @@
         <script type="text/javascript" src="main.js" defer></script>
     </head>
     <body>
-        <h1>Calculadora</h1>
-        <form>
-            <section>
-                <div>
-                    <label for="num1">
-                        <p>Informe o primeiro valor</p>
-                    </label>
-                    <p>
-                        <input type="number" name="num1" id="num1" />
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <label for="operacao">
-                        <p>Selecione a operação desejada</p>
-                    </label>
-                    <p>
-                        <select name="operacao" id="operacao">
-                            <option value="NA" selected disabled>------</option>
-                            <option value="+">Adição (+)</option>
-                            <option value="-">Subtração (-)</option>
-                            <option value="*">Multiplicação (*)</option>
-                            <option value="/">Divisão (/)</option>
-                        </select>
-                    </p>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <label for="num2">
-                        <p>Selecione o segundo valor</p>                        
-                    </label>
-                    <p>
-                        <input type="number" name="num2" id="num2" />
-                    </p>
-                </div>
-            </section>
-            <section>
-                <button type="submit">Calcular</button>
-            </section>
-        </form>
+        <div id="container">
+            <h1 class="title">Calculadora</h1>
+            <form class="calcForm">
+                <section>
+                    <div>
+                        <label for="num1">
+                            <p>Informe o primeiro valor</p>
+                        </label>
+                        <p>
+                            <input type="number" name="num1" id="num1" class="formInput" />
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="operacao">
+                            <p>Selecione a operação desejada</p>
+                        </label>
+                        <p>
+                            <select name="operacao" id="operacao" class="formInput">
+                                <option value="NA" selected disabled>------</option>
+                                <option value="+">Adição (+)</option>
+                                <option value="-">Subtração (-)</option>
+                                <option value="*">Multiplicação (*)</option>
+                                <option value="/">Divisão (/)</option>
+                            </select>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <label for="num2">
+                            <p>Selecione o segundo valor</p>                        
+                        </label>
+                        <p>
+                            <input type="number" name="num2" id="num2" class="formInput" />
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <button type="submit" onclick="calcular(num1, operacao, num2)">Calcular</button>
+                </section>
+            </form>
+        </div>
     </body>
 </html>

@@ -1,7 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
 :root {
-    --primary-color: lightcoral;
+    --primary-color: darkblue;
+    --secondary-color: DimGrey;
+    --tertiary-color: Gainsboro;
 }
 
 body {
-    background-color: darkblue;
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Roboto Mono, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: auto;
+    background: #F7F7F7;
+    box-shadow: 5px 10px 5px #888888;
+    border-radius: 20px;
+}
+
+.title {
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+}
+
+.calcForm {
+    padding-left: 25px;
+}
+
+.formInput {
+    background: white;
+    width: 180px;
+    padding: 3px 3px 5px 5px;
+}
+
+.formInput:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
 }
