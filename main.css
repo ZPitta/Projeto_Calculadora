@@ -17,7 +17,7 @@ body {
     width: 360px;
     margin: auto;
     background: #F7F7F7;
-    box-shadow: 5px 10px 5px #888888;
+    box-shadow: 5px 10px 5px #252525;
     border-radius: 20px;
 }
 
@@ -32,6 +32,7 @@ body {
 
 .calcForm {
     padding-left: 25px;
+    padding-right: 25px;
 }
 
 .formInput {
@@ -40,7 +41,56 @@ body {
     padding: 3px 3px 5px 5px;
 }
 
+.formInput:hover{
+    border: 3px dashed var(--primary-color);
+    outline: none;
+}
+
+.formSelect {
+    width: 180px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.formButton {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--tertiary-color);
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    font-size: large;
+}
+
 .formInput:focus {
     border: 3px solid var(--primary-color);
     outline: none;
+}
+
+.formSelect:hover {
+    border: 3px dashed var(--primary-color);
+    outline: none;
+}
+
+.formSelect:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+.formButton:hover {
+    border: 3px dashed var(--primary-color);
+    outline: none;
+}
+
+.formButton:focus {
+    border: 3px solid var(--primary-color);
+    outline: none;
+}
+
+#resultado {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
 }

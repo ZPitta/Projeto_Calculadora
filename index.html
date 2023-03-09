@@ -15,7 +15,7 @@
     <body>
         <div id="container">
             <h1 class="title">Calculadora</h1>
-            <form class="calcForm">
+            <form class="calcForm" id="formCalc">
                 <section>
                     <div>
                         <label for="num1">
@@ -32,7 +32,7 @@
                             <p>Selecione a operação desejada</p>
                         </label>
                         <p>
-                            <select name="operacao" id="operacao" class="formInput">
+                            <select name="operacao" id="operacao" class="formSelect" required>
                                 <option value="NA" selected disabled>------</option>
                                 <option value="+">Adição (+)</option>
                                 <option value="-">Subtração (-)</option>
@@ -53,9 +53,12 @@
                     </div>
                 </section>
                 <section>
-                    <button type="submit" onclick="calcular(num1, operacao, num2)">Calcular</button>
+                    <button type="submit" class="formButton">Calcular</button>
                 </section>
             </form>
+            <div id="resultado">
+                <p>O resultado da conta é: <span id="result">0</span></p>
+            </div>
         </div>
     </body>
 </html>
